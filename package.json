@@ -14,6 +14,7 @@
   "author": "Coder Poet",
   "license": "MIT",
   "dependencies": {
+    "@vueuse/core": "^11.0.3",
     "pinia": "^2.2.2",
     "pinia-plugin-persistedstate": "^4.0.1",
     "sass": "^1.78.0",
