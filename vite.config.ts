@@ -1,4 +1,5 @@
 import vue from "@vitejs/plugin-vue";
+import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import ElementPlus from "unplugin-element-plus/vite";
 import { defineConfig } from "vite";
@@ -12,6 +13,7 @@ export default defineConfig({
       dts: true,
     }),
     ElementPlus({ useSource: true, defaultLocale: "zh-cn" }),
+    UnoCSS(),
     vue(),
     VueDevTools({
       launchEditor: "code-insiders", // Your editor
