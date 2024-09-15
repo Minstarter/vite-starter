@@ -5,8 +5,8 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 
+import "@styles/index.scss";
 import "virtual:uno.css";
-import "./style.css";
 
 import "dayjs/locale/zh-cn";
 import "element-plus/es/hooks/use-locale/index";
