@@ -6,6 +6,7 @@ import {
   transformerDirectives,
 } from "unocss";
 
+import presetIcons from "@unocss/preset-icons";
 import presetRemToPx from "@unocss/preset-rem-to-px";
 
 export default defineConfig({
@@ -19,6 +20,9 @@ export default defineConfig({
   presets: [
     presetAttributify({
       /* preset attributify options */
+    }),
+    presetIcons({
+      /* preset icons options */
     }),
     presetRemToPx({ baseFontSize: 4 }),
     presetUno(),

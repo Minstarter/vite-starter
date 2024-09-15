@@ -33,12 +33,18 @@ importers:
         specifier: '4'
         version: 4.4.5(vue@3.5.5(typescript@5.6.2))
     devDependencies:
+      '@iconify/json':
+        specifier: ^2.2.248
+        version: 2.2.248
       '@types/node':
         specifier: ^22.5.5
         version: 22.5.5
       '@unocss/postcss':
         specifier: ^0.62.3
         version: 0.62.3(postcss@8.4.47)
+      '@unocss/preset-icons':
+        specifier: ^0.62.3
+        version: 0.62.3
       '@unocss/preset-rem-to-px':
         specifier: ^0.62.3
         version: 0.62.3
@@ -541,6 +547,9 @@ packages:
 
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
+
+  '@iconify/json@2.2.248':
+    resolution: {integrity: sha512-hoNQIDqx071K3ny1+kJwwC1YClHex+VnPfYAWFK0YfBmdA3DP4Ij3zsPttpX3dVqsYEnJSpy50tVit0Fsqp9Sg==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2206,6 +2215,11 @@ snapshots:
       '@floating-ui/utils': 0.2.8
 
   '@floating-ui/utils@0.2.8': {}
+
+  '@iconify/json@2.2.248':
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.2
 
   '@iconify/types@2.0.0': {}
 
