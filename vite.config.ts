@@ -38,4 +38,12 @@ export default defineConfig({
       "@styles": pathResolve("src/styles"),
     },
   },
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "@styles/base.scss" as *;`,
+      },
+    },
+  },
 });
