@@ -1,0 +1,13 @@
+{
+  "name": "vite-starter",
+  "version": "0.0.1",
+  "description": "✨ vue project template",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Coder Poet",
+  "license": "MIT"
+}
