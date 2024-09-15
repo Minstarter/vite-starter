@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router";
+import { BaseLayout } from "@layouts";
 
 import { useCounterStore } from "./stores/counter";
 
@@ -11,7 +11,7 @@ console.log(store.count);
 </script>
 
 <template>
-  <router-view></router-view>
+  <base-layout></base-layout>
 </template>
 
 <style scoped lang="scss"></style>
