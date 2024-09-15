@@ -5,9 +5,15 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "Coder Poet",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.4.5"
+  }
 }
