@@ -57,6 +57,9 @@ importers:
       unocss:
         specifier: ^0.62.3
         version: 0.62.3(postcss@8.4.47)(rollup@4.21.3)(vite@5.4.5(@types/node@22.5.5)(sass@1.78.0))
+      unocss-preset-theme:
+        specifier: ^0.13.0
+        version: 0.13.0(@unocss/core@0.62.3)
       unplugin-auto-import:
         specifier: ^0.18.3
         version: 0.18.3(@nuxt/kit@3.13.1(rollup@4.21.3))(@vueuse/core@11.0.3(vue@3.5.5(typescript@5.6.2)))(rollup@4.21.3)
@@ -729,6 +732,9 @@ packages:
     resolution: {integrity: sha512-zYOvFE0HfGIbnP/AvsbAlJpPRx9CQyXzL11m/8zgsHW5SGlJIYxuTll83l/xu026G5mPiksy7quoEOEgCLslqw==}
     engines: {node: '>=14'}
 
+  '@unocss/core@0.61.9':
+    resolution: {integrity: sha512-2W1YZQIWXcueGdbXU/ZCqn/8yQhWk8e8kAHFkVlbc9rictkd2UmPB9nIZ8Ii1tMwt6F0TT6vfHbLJEGCV08o2g==}
+
   '@unocss/core@0.62.3':
     resolution: {integrity: sha512-Pfyrj8S7jq9K1QXD6Z5BCeiQavaHpbMN5q958/kmdbNGp57hOg1e346fMJAvgPjLBR+lE/hgZEsDrijtRiZXnw==}
 
@@ -773,6 +779,10 @@ packages:
 
   '@unocss/reset@0.62.3':
     resolution: {integrity: sha512-XVKPkbm8y9SGzRaG3x+HygGZURm50MvKLVHXsbxi67RbIir9Ouyt9hQTV6Xs3RicRZFWOpJx3wMRb8iKUOe5Zw==}
+
+  '@unocss/rule-utils@0.61.9':
+    resolution: {integrity: sha512-54Hw0nF+3ga70ETo3kes4He62wdsB4dHMgEiD/DEmJzyVY3ZuG/sIVAgkxjMQDo5w4SSYU/Ys1QaY+IQmeJHFQ==}
+    engines: {node: '>=14'}
 
   '@unocss/rule-utils@0.62.3':
     resolution: {integrity: sha512-qI37jHH//XzyR5Y2aN3Kpo4lQrQO+CaiXpqPSwMLYh2bIypc2RQVpqGVtU736x0eA6IIx41XEkKzUW+VtvJvmg==}
@@ -1660,6 +1670,11 @@ packages:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
 
+  unocss-preset-theme@0.13.0:
+    resolution: {integrity: sha512-88z3lw5X4bnn9/lKCjdgMkn1GhXzZGMbqwt9c3hmUlhC7GztDkygMwLNli07y12VLGvDPEMZZLUmCWEOkT7fwg==}
+    peerDependencies:
+      '@unocss/core': '>= 0.52.0'
+
   unocss@0.62.3:
     resolution: {integrity: sha512-CLS6+JIlBobe/iPTz07pehyGDP8VqGJsiE+ZZ3Xkgib3hw76nCqAQF/4mJ8jVoV4C8KvGyVxmHaSSCFOkWmmZg==}
     engines: {node: '>=14'}
@@ -2426,6 +2441,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@unocss/core@0.61.9': {}
+
   '@unocss/core@0.62.3': {}
 
   '@unocss/extractor-arbitrary-variants@0.62.3':
@@ -2501,6 +2518,11 @@ snapshots:
       '@unocss/rule-utils': 0.62.3
 
   '@unocss/reset@0.62.3': {}
+
+  '@unocss/rule-utils@0.61.9':
+    dependencies:
+      '@unocss/core': 0.61.9
+      magic-string: 0.30.11
 
   '@unocss/rule-utils@0.62.3':
     dependencies:
@@ -3496,6 +3518,11 @@ snapshots:
       - webpack-sources
 
   universalify@2.0.1: {}
+
+  unocss-preset-theme@0.13.0(@unocss/core@0.62.3):
+    dependencies:
+      '@unocss/core': 0.62.3
+      '@unocss/rule-utils': 0.61.9
 
   unocss@0.62.3(postcss@8.4.47)(rollup@4.21.3)(vite@5.4.5(@types/node@22.5.5)(sass@1.78.0)):
     dependencies:
