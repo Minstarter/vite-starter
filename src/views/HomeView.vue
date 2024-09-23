@@ -2,6 +2,8 @@
 import {} from "vue";
 
 import HelloWorld from "../components/HelloWorld.vue";
+
+console.log(import.meta.env);
 </script>
 
 <template>

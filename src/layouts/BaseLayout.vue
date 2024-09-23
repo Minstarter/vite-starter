@@ -20,5 +20,7 @@ import { RouterView } from "vue-router";
   height: calc(100vh - $base-height * 2);
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 </style>

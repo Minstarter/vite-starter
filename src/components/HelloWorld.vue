@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ElButton } from "element-plus";
 import { ref } from "vue";
 
 defineProps({
@@ -12,7 +13,7 @@ const count = ref(0);
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <el-button type="button" @click="count++">count is {{ count }}</el-button>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
@@ -39,5 +40,32 @@ const count = ref(0);
 <style scoped lang="scss">
 .read-the-docs {
   color: #888;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.card {
+  padding: 2em;
+  @apply flex-center  flex-col;
 }
 </style>

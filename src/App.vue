@@ -11,7 +11,7 @@ console.log(store.count);
 </script>
 
 <template>
-  <base-layout></base-layout>
+  <base-layout />
 </template>
 
 <style scoped lang="scss"></style>
