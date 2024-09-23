@@ -7,12 +7,19 @@ import { defineConfig } from "vite";
 import VueDevTools from "vite-plugin-vue-devtools";
 import tsconfigPaths from "vite-tsconfig-paths";
 
+import packageJson from "./package.json";
+
 const pathResolve = (dir: string): string => {
   return fileURLToPath(new URL(`./${dir}`, import.meta.url));
 };
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // ...
+  define: {
+    __APP_VERSION__: JSON.stringify(packageJson.version),
+  },
+
   plugins: [
     AutoImport({
       imports: ["vue", "vue-router", "pinia"],
