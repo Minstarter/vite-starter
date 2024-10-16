@@ -54,4 +54,23 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: (checkInfo) => {
+          if (/\.(gif|jpe?g|png|svg)$/.test(checkInfo.name!)) {
+            return `assets/images/[name]-[hash][extname]`;
+          }
+          if (/\.(woff2?|eot|ttf|otf)$/.test(checkInfo.name!)) {
+            return `assets/fonts/[name]-[hash][extname]`;
+          }
+
+          return "assets/css/[name]-[hash][extname]";
+        },
+        chunkFileNames: "assets/js/[name]-[hash].js",
+
+        entryFileNames: "assets/js/[name]-[hash].js",
+      },
+    },
+  },
 });
