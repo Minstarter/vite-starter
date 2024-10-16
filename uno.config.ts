@@ -14,6 +14,9 @@ import presetTheme from "unocss-preset-theme";
 import { dark, light } from "./src/styles/theme";
 
 export default defineConfig({
+  content: {
+    filesystem: ["**/*.{html,js,ts,vue}"],
+  },
   shortcuts: {
     "flex-center": "flex items-center justify-center",
     "grid-center": "grid place-items-center",

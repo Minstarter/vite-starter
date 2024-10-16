@@ -1,5 +1,6 @@
 // @ts-check
 import eslint from "@eslint/js";
+import unocss from "@unocss/eslint-config/flat";
 import eslintPluginVue from "eslint-plugin-vue";
 import tseslint from "typescript-eslint";
 
@@ -10,6 +11,7 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
   ...eslintPluginVue.configs["flat/recommended"],
+  unocss,
 
   // register all of the plugins up-front
   {
@@ -97,7 +99,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ["eslint.config.*", "prettier.config.*"],
+    files: ["eslint.config.*", "prettier.config.*", "postcss.config.*"],
     ...tseslint.configs.disableTypeChecked,
   }
 );
