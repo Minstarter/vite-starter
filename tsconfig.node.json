@@ -19,5 +19,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["vite.config.ts", "uno.config.ts"]
+  "include": ["vite.config.ts", "uno.config.ts"],
+  "exclude": ["eslint.config.js", "stylelint.config.js","prettier.config.js"]
 }
