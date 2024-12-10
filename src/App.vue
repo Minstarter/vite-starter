@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { BaseLayout } from "@layouts";
+import { BaseLayout } from '@layouts';
 
-import { useCounterStore } from "./stores/counter";
+import { useCounterStore } from './stores/counter';
 
 const store = useCounterStore();
 
@@ -14,4 +14,6 @@ console.log(store.count);
   <base-layout />
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+/* Only comments */
+</style>

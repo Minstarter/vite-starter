@@ -1,5 +1,5 @@
 <script setup lang="ts" name="BaseFooter">
-import {} from "vue";
+import { } from 'vue';
 </script>
 
 <template>
@@ -13,6 +13,7 @@ import {} from "vue";
   width: 100%;
   height: $base-height;
   background-color: $base-bg;
+
   @apply flex-center;
 }
 </style>

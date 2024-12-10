@@ -1,9 +1,8 @@
 <script setup lang="ts" name="BaseLayout">
-import { BaseFooter, BaseHeader } from "@components";
+import { BaseFooter, BaseHeader } from '@components';
 
-import { RouterView } from "vue-router";
+import { RouterView } from 'vue-router';
 </script>
-
 <template>
   <base-header />
 

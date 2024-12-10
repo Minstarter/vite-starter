@@ -1,16 +1,18 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia';
 
 // ✨ Option Stores
-export const useCounterStore = defineStore("counter", {
-  state: () => ({ count: 0, name: "Eduardo" }),
+export const useCounterStore = defineStore('counter', {
+  state: () => ({
+    count: 0, name: 'Eduardo' 
+  }),
   getters: {
-    doubleCount: (state) => state.count * 2,
+    doubleCount: (state) => state.count * 2 
   },
   actions: {
     increment() {
       this.count++;
-    },
-  },
+    }
+  }
   // persist: true,
 });
 
